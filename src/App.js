@@ -26,7 +26,7 @@ const App = () => {
           <h1 className="p-1">FreeyourMind</h1>
         </header>
         <nav className='mx-auto mt-5 border flex justify-center gap-3 max-w-[65vw]'>
-          <Link to="/" className='display-button'><button>Dashboard</button></Link>
+          <Link to="/"><button>Dashboard</button></Link>
           <Link to="/phq9"><button>PHQ-9 Test</button></Link>
           <Link to="/mood-tracker"><button>Mood Tracker</button></Link>
           <Link to="/virtual-counseling"><button>Virtual Counseling</button></Link>
