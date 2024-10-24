@@ -53,7 +53,7 @@ function App() {
 
         </header>
         
-        <nav className='mt-5 border-2 rounded-xl flex flex-row justify-around  max-w-[65vw] m-auto px-[10px] bg-[rgb(40,44,52)]'>
+        <nav className='mt-5 border-2 rounded-xl flex flex-row justify-around  w-[75vw] m-auto px-[10px] bg-[rgb(40,44,52)] '>
           <Link to="/"><button>Dashboard</button></Link>
           <Link to="/phq9"><button>PHQ-9 Test</button></Link>
           <Link to="/mood-tracker"><button>Mood Tracker</button></Link>
@@ -67,7 +67,7 @@ function App() {
         </main>
         <BsFillChatDotsFill 
           onClick={toggleChatbot} 
-          className="border-2 p-2 border-black bg-white rounded-full fixed bottom-5 right-5 text-5xl text-blue-900 cursor-pointer transition-transform transform hover:scale-110"
+          className="border-2 p-1 border-black rounded-full fixed bottom-5 right-5 text-5xl text-blue-900 cursor-pointer transition-transform transform hover:scale-110"
         />
         {isChatbotOpen && (
           <div className="fixed bottom-16 right-5 w-80 bg-white border border-gray-300 rounded-lg shadow-lg p-4 z-50 overflow-auto max-h-[60vh]">
