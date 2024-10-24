@@ -59,14 +59,14 @@ const PHQ9TestComponent = () => {
         console.log(error)
     }}
 
-  const getRandomColor = () => {
-    const letters = '0123456789ABCDEF';
-    let color = '#';
-    for (let i = 0; i < 6; i++) {
-      color += letters[Math.floor(Math.random() * 16)];
-    }
-    return color;
-  };
+  // const getRandomColor = () => {
+  //   const letters = '0123456789ABCDEF';
+  //   let color = '#';
+  //   for (let i = 0; i < 6; i++) {
+  //     color += letters[Math.floor(Math.random() * 16)];
+  //   }
+  //   return color;
+  // };
   
 
   const handleAnswerChange = (index, value) => {
@@ -164,9 +164,9 @@ const PHQ9TestComponent = () => {
       </div>
       <h2 className='font-bold text-2xl mt-5 mb-5'>PHQ-9 Depression Test</h2>
       {questions.map((question, index) => (
-        <div key={index} className='border rounded-xl max-w-[45vw] flex flex-col justify-center items-center mx-auto gap-4 mt-5 mb-5 p-5 text-white font-semibold font' style={{ backgroundColor: getRandomColor() }}>
+        <div key={index} className='border rounded-xl max-w-[45vw] flex flex-col justify-center items-center mx-auto gap-4 mt-5 mb-5 p-5  font-semibold font' >
           <p className='text-xl'>{question}</p>
-          <select onChange={(e) => handleAnswerChange(index, e.target.value)} className='border border-black text-black rounded-md'>
+          <select onChange={(e) => handleAnswerChange(index, e.target.value)} className='border border-black text-black rounded-xl p-2'>
             <option value="0">Not at all</option>
             <option value="1">Several days</option>
             <option value="2">More than half the days</option>
@@ -174,7 +174,7 @@ const PHQ9TestComponent = () => {
           </select>
         </div>
       ))}
-      <button onClick={calculateScore}>Submit</button>
+      <button onClick={calculateScore} className='bg-blue-600 rounded-full'>Submit</button>
 
      
     </div>

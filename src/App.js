@@ -53,7 +53,7 @@ function App() {
 
         </header>
         
-        <nav className='mt-5 border-2 rounded-xl flex flex-row justify-around  w-[75vw] m-auto px-[10px] bg-[rgb(40,44,52)]'>
+        <nav className='mt-5 border-2 rounded-xl flex flex-row justify-around  max-w-[65vw] m-auto px-[10px] bg-[rgb(40,44,52)]'>
           <Link to="/"><button>Dashboard</button></Link>
           <Link to="/phq9"><button>PHQ-9 Test</button></Link>
           <Link to="/mood-tracker"><button>Mood Tracker</button></Link>
