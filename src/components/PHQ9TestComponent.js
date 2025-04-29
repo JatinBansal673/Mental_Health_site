@@ -4,7 +4,7 @@ import { useSearchParams } from 'react-router-dom'
 
 const PHQ9TestComponent = () => {
   const [answers, setAnswers] = useState(Array(9).fill(0));
-  const [score, setScore] = useState(null);
+  const [score, setScore] = useState(0);
   const [searchParams]=useSearchParams()
   const userId=searchParams.get("userId")
   const questions = [
@@ -164,7 +164,7 @@ const PHQ9TestComponent = () => {
       </div>
       <h2 className='font-bold text-2xl mt-5 mb-5'>PHQ-9 Depression Test</h2>
       {questions.map((question, index) => (
-        <div key={index} className='border rounded-xl max-w-[45vw] flex flex-col justify-center items-center mx-auto gap-4 mt-5 mb-5 p-5  font-semibold font' >
+        <div key={index} className='border bg-blue-100 rounded-xl max-w-[45vw] flex flex-col justify-center items-center mx-auto gap-4 mt-5 mb-5 p-5  font-semibold font' >
           <p className='text-xl'>{question}</p>
           <select onChange={(e) => handleAnswerChange(index, e.target.value)} className='border border-black text-black rounded-xl p-2'>
             <option value="0">Not at all</option>

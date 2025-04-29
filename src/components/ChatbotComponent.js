@@ -6,6 +6,7 @@ const Chatbot = () => {
     const [userInput, setUserInput] = useState('');
     const [response, setResponse] = useState('');
     const [error, setError] = useState('');
+    const api_key=process.env.REACT_APP_GROQ_API_KEY;
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -20,7 +21,7 @@ const Chatbot = () => {
 
             }, {
                 headers: {
-                    'Authorization': `Bearer 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`,
+                    'Authorization': `Bearer ${api_key}`,
                     'Content-Type': 'application/json',
                 },
             });

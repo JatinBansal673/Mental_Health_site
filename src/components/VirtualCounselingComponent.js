@@ -1,16 +1,20 @@
 import React, { useState } from 'react';
 import { FiVideo, FiCalendar, FiUser } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
+import {toast, ToastContainer} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css'
 
 const VirtualCounselingComponent = () => {
   const [appointment, setAppointment] = useState(false);
 
   const handleBookAppointment = () => {
     setAppointment(true); // Simulates booking confirmation
+    toast.success("Appointment Booked Successfully");
   };
 
   return (
     <div className="virtual-counseling max-w-4xl mx-auto p-6">
+      <ToastContainer/>
       <h2 className="text-3xl font-bold mb-6 text-center">Virtual Counseling</h2>
 
       {/* Counselor Directory */}
