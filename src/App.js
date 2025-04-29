@@ -7,7 +7,7 @@ import AnonymousChatComponent from './components/AnonymousChatComponent';
 import ResourceDirectoryComponent from './components/ResourceDirectoryComponent';
 import DashboardComponent from './components/DashboardComponent.js';
 import './App.css';
-import mental_health from './mental-health.png';
+import mental_health from '../public/mental-health.png';
 import Footer from './components/FooterComponent.js';
 import LoginComponent from './components/LoginComponent';
 import Chatbot from './components/ChatbotComponent.js';
