@@ -1,0 +1,57 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+}
+
+.App-nav {
+  margin: 20px;
+}
+
+.App-nav button {
+  margin: 5px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.App-main {
+  padding: 20px;
+}
+
+button {
+  font-weight: 600;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 5px 2px;
+  cursor: pointer;
+}
+button:hover{
+
+  border-radius: 999px;
+  background-color: gray;
+  
+
+}
+@keyframes slide-in {
+  0% {
+      transform: translateX(-100%);
+      opacity: 0;
+  }
+  100% {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+.slide-in {
+  animation: slide-in 0.5s ease forwards; /* Adjust duration as needed */
+}
