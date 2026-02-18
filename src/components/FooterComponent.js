@@ -10,8 +10,8 @@ const Footer = () => {
     <footer class="footer" className='gap-10 flex mb-0 mt-20 justify-evenly p-5'>
         <div class="footer-left">
             <div class="company" className='flex flex-col'>
-                <a href="#" className='flex gap-2 font-bold'>
-                    <img src={mental_health} className='h-5 w-7'/>
+                <a href="/" className='flex gap-2 font-bold'>
+                    <img src={mental_health} alt="mentalHealth" className='h-5 w-7'/>
                    MindConnect
                 </a>
                 <p>
@@ -20,13 +20,13 @@ const Footer = () => {
             </div>
             <div class="socials" className='flex align-middle gap-3 mt-2'>
                 <a href="#instagram">
-                    <img src={instagram}  className='h-4'/>
+                    <img src={instagram} alt="instaLogo" className='h-4'/>
                 </a>
                 <a href="#linkedin">
-                    <img src={linkedin} className='h-4'/>
+                    <img src={linkedin} alt="linkedinLogo" className='h-4'/>
                 </a>
                 <a href="#twitter">
-                    <img src={twitter} className='h-4'/>
+                    <img src={twitter} alt="twitterLogo" className='h-4'/>
                 </a>
             </div>              
         </div>

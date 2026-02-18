@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Line } from 'react-chartjs-2';
 import { Chart as ChartJS, CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend } from 'chart.js';
-import { FaSmile, FaFrown, FaMeh, FaSadTear, FaGrinStars } from 'react-icons/fa'; // Import icons for moods
+import { FaSmile, FaFrown, FaMeh, FaGrinStars } from 'react-icons/fa'; // Import icons for moods
 import { FiSend } from 'react-icons/fi'; // Send icon for submission
 
 // Register Chart.js components

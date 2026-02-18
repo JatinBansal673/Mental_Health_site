@@ -34,8 +34,8 @@ for(const [key,value] of formItrt2){
 console.log(formDict2)
 const response=await sendData("http://localhost:5200/users/signup",formDict2)
 let formDict={}
-if(response && response.status==200){
-        Object.keys(formDict2).filter((elem)=>elem!="name").map((key)=>{
+if(response && response.status===200){
+        Object.keys(formDict2).filter((elem)=>elem!=="name").map((key)=>{
             console.log(key)
             return formDict[key]=formDict2[key]
         })
@@ -81,7 +81,7 @@ for(const [key,value] of formItrt2){
 console.log(formDict2)
 let response=await sendData("http://localhost:5200/users/signin",formDict2)
 console.log("ye",response)
-if(response.status==200){
+if(response.status===200){
     localStorage.setItem("UserName",response.user.name)
         
         localStorage.setItem("token",response.token)
@@ -144,9 +144,9 @@ blinkError(err)
     <form className={`form flex flex-col bg-white h-md:h-[320px] h-md:w-[430px] h-sm:w-[270px] h-sm:h-[51vh] shadow-md p-[15px] justify-between mt-[40px] `}>
     <h1 className='flex justify-center items-start'>
       
-      <span className="text-[22px]">{is_reg==true? "Signin":"Register"} </span></h1>
+      <span className="text-[22px]">{is_reg===true? "Signin":"Register"} </span></h1>
       
-      {is_reg==true?null:
+      {is_reg===true?null:
       <div className="name flex flex-col  justify-between ">
       <label htmlFor="name" className='name_label text-sm text-[12px] text-[#5E5E5E] font-semibold'>Name:</label>
       <input type="text" id="name" name="name" required className=" border-[rbg(0,10,0)] border-[0.5px] bg-[rgb(249,252,254)] w-[78%]"/>

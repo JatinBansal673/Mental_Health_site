@@ -12,7 +12,7 @@ const DashboardComponent = () => {
           <p class="para2">Welcome to a platform designed to help you take charge of your mental well-being. Whether you're looking for professional support, helpful resources, or self-care tools, we’re here to guide you every step of the way.
           </p>
         </div>
-        <img src={titleimg} className='h-[33rem] w-[30rem]'/>
+        <img src={titleimg} alt="titleImg" className='h-[33rem] w-[30rem]'/>
       </div>
      <div className='w-full bg bg-blue-100 p-5'>
         <p className='mt-4 mb-5 font-bold text-2xl align-middle'>Our Salient Features</p>

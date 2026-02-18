@@ -89,13 +89,13 @@ const PHQ9TestComponent = () => {
     setTimeout(()=>{
       getScore()
     },[500])
-  },[0])
+  },[getScore])
 
   useEffect(()=>{
     console.log(score)
     if(score!==null){
       sendScore(score)}
-  },[score])
+  },[score, sendScore])
 
 
   const getRecommendation = () => {
